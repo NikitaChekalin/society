@@ -1,0 +1,43 @@
+@import './common/fonts.module';
+@import './common/colors.module';
+@import './common/helpers.module';
+@import './common/variables.module';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  padding: 0;
+
+  box-sizing: border-box;
+
+  color: $black;
+  font-family: $fontSans;
+  font-size: $fontSize16;
+
+  touch-action: manipulation;
+  overscroll-behavior-x: none;
+
+  text-rendering: optimizelegibility;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  min-height: 100%;
+  position: relative;
+  overflow-x: hidden;
+
+  background-color: $white;
+}
+
+p {
+  margin: 0;
+}
