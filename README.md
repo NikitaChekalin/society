@@ -11,5 +11,6 @@ Stack of technologies:
 For creating production build: npm run build
 For starting developing server: npm run dev
 
-Node version: v20.9.0
 Port: 4150
+
+Node version: v20.9.0
