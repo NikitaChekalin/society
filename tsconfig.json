@@ -1,7 +1,11 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -17,45 +21,96 @@
     "incremental": true,
     "baseUrl": ".",
     "paths": {
-      "@config": ["config/index.ts"],
-      "@config/*": ["config/*"],
-
-      "@features": ["features/index.ts"],
-      "@features/*": ["features/*"],
-
-      "@share/*": ["share/*"],
-
-      "@components/*": ["share/components/*"],
-
-      "@lib": ["share/lib/index.ts"],
-      "@lib/*": ["share/lib/*"],
-
-      "@hooks": ["share/hooks/index.ts"],
-      "@hooks/*": ["share/hooks/*"],
-
-      "@constants": ["share/constants/index.ts"],
-      "@constants/*": ["share/constants/*"],
-
-      "@utils": ["share/utils/index.ts"],
-      "@utils/*": ["share/utils/*"],
-
-      "@helpers": ["share/helpers/index.ts"],
-      "@helpers/*": ["share/helpers/*"],
-
-      "@services": ["share/services/index.ts"],
-      "@services/*": ["share/services/*"],
-
-      "@types": ["share/types/index.ts"],
-      "@types/*": ["share/types/*"],
-
-      "@styles/*": ["share/styles/*"],
-
-      "@images/*": ["public/assets/images/*"],
-      "@animations/*": ["public/assets/animations/*"],
-      "@videos/*": ["public/assets/videos/*"],
-      "@icons/*": ["public/assets/icons/*"]
-    }
+      "@config": [
+        "config/index.ts"
+      ],
+      "@config/*": [
+        "config/*"
+      ],
+      "@features": [
+        "features/index.ts"
+      ],
+      "@features/*": [
+        "features/*"
+      ],
+      "@share/*": [
+        "share/*"
+      ],
+      "@components/*": [
+        "share/components/*"
+      ],
+      "@lib": [
+        "share/lib/index.ts"
+      ],
+      "@lib/*": [
+        "share/lib/*"
+      ],
+      "@hooks": [
+        "share/hooks/index.ts"
+      ],
+      "@hooks/*": [
+        "share/hooks/*"
+      ],
+      "@constants": [
+        "share/constants/index.ts"
+      ],
+      "@constants/*": [
+        "share/constants/*"
+      ],
+      "@utils": [
+        "share/utils/index.ts"
+      ],
+      "@utils/*": [
+        "share/utils/*"
+      ],
+      "@helpers": [
+        "share/helpers/index.ts"
+      ],
+      "@helpers/*": [
+        "share/helpers/*"
+      ],
+      "@services": [
+        "share/services/index.ts"
+      ],
+      "@services/*": [
+        "share/services/*"
+      ],
+      "@types": [
+        "share/types/index.ts"
+      ],
+      "@types/*": [
+        "share/types/*"
+      ],
+      "@styles/*": [
+        "share/styles/*"
+      ],
+      "@images/*": [
+        "public/assets/images/*"
+      ],
+      "@animations/*": [
+        "public/assets/animations/*"
+      ],
+      "@videos/*": [
+        "public/assets/videos/*"
+      ],
+      "@icons/*": [
+        "public/assets/icons/*"
+      ]
+    },
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "config/runtime.js"],
-  "exclude": ["node_modules"]
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "config/runtime.js",
+    ".next/types/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }
