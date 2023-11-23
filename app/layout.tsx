@@ -1,6 +1,7 @@
-import { Sidebar } from '@share/components/layout'
 import type { Metadata } from 'next'
+import { Sidebar } from '@share/components/layout'
 import '@styles/document.scss'
+import s from './layout.module.scss'
 
 export const metadata: Metadata = {
   title: 'Society - social media for everyone',
@@ -10,8 +11,12 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang='en'>
-      <Sidebar />
-      <body>{children}</body>
+      <body>
+        <div className={s.layout}>
+          <Sidebar />
+          {children}
+        </div>
+      </body>
     </html>
   )
 }

@@ -1,0 +1,11 @@
+@import '@styles/share';
+
+.root {
+  cursor: pointer;
+  transition: $transition;
+
+  &:hover {
+    scale: 1.1;
+    stroke: $white;
+  }
+}

@@ -1,0 +1,13 @@
+@import '@styles/share';
+
+.root {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+
+  height: 100%;
+  padding: rem(20) rem(10);
+
+  border-right: $border;
+}
