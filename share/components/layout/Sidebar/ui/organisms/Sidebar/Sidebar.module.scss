@@ -1,16 +1,13 @@
 @import '@styles/share';
 
 .root {
-  height: 100%;
-
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: space-between;
 
-  background-color: $black500Color;
+  height: 100%;
+  padding: rem(20) rem(10);
 
   border-right: $border;
-
-  padding: rem(20) rem(10);
 }

@@ -1,7 +1,7 @@
 @import '@styles/share';
 
 .icon {
-  svg {
-    color: pink;
+  &.active {
+    stroke: $white;
   }
 }

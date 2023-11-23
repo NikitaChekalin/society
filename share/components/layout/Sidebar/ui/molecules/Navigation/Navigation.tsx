@@ -1,15 +1,12 @@
-import { SidebarNavigation } from '../../../types'
+import { SIDEBAR_NAVIGATION } from '@share/constants'
 import { NavigationLink } from '../../atoms'
+
 import s from './Navigation.module.scss'
 
-interface NavigationProps {
-  navigation: SidebarNavigation
-}
-
-export const Navigation = ({ navigation }: NavigationProps) => {
+export const Navigation = () => {
   return (
     <nav className={s.root}>
-      {navigation.map(({ href, icon }) => (
+      {SIDEBAR_NAVIGATION.map(({ href, icon }: any) => (
         <NavigationLink key={href} href={href} icon={icon} />
       ))}
     </nav>

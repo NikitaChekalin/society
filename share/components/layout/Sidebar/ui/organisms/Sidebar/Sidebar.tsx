@@ -1,18 +1,16 @@
-import Image from 'next/image'
-import Logo from '@icons/logo.svg'
-import { SunIcon } from 'lucide-react'
+import { Icon } from '@share/components/ui'
 
 import { Navigation } from '../../molecules'
-import { SIDEBAR_NAVIGATION } from '../../../const'
+import { Logo } from '../../atoms'
 
 import s from './Sidebar.module.scss'
 
 export const Sidebar = () => {
   return (
     <aside className={s.root}>
-      <Image src={Logo} width={45} height={45} priority alt='Logotype' />
-      <Navigation navigation={SIDEBAR_NAVIGATION} />
-      <SunIcon color='white' />
+      <Logo />
+      <Navigation />
+      <Icon name='sun-medium' />
     </aside>
   )
 }

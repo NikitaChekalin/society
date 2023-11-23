@@ -1,16 +1,24 @@
 import Link from 'next/link'
+import dynamicIconImports from 'lucide-react/dynamicIconImports'
+
+import { Icon } from '@share/components/ui'
+import { getServerPathname } from '@share/server-actions'
+
+import cn from 'classnames'
+
 import s from './NavigationLink.module.scss'
 
-interface NavigationLinkProps {
-  icon: React.FC<React.SVGProps<SVGElement>>
+export interface NavigationLinkProps {
+  icon: keyof typeof dynamicIconImports
   href: string
 }
 
 export const NavigationLink = ({ icon, href }: NavigationLinkProps) => {
-  const Icon = icon
+  const pathname = getServerPathname()
+
   return (
-    <Link href={href} className={s.root}>
-      <Icon width={25} height={25} className={s.icon} color='white' />
+    <Link href={href}>
+      <Icon name={icon} className={cn(s.icon, { [s.active]: pathname === href })} />
     </Link>
   )
 }
