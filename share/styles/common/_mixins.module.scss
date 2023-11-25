@@ -12,3 +12,22 @@
     src: url('/assets/fonts/' + $file + '.ttf') format('ttf2');
   }
 }
+
+@mixin scrollbar() {
+  &::-webkit-scrollbar {
+    width: rem(4);
+  }
+
+  &::-webkit-scrollbar-track {
+    background: $black500Color;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: rem(4);
+    background: $black400Color;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: $black400Color;
+  }
+}
