@@ -1,11 +1,11 @@
 import { Icon } from '@share/components/ui'
 
-import { Navigation } from '../../molecules'
 import { Logo } from '../../atoms'
+import { Navigation } from '../../molecules'
 
 import s from './Sidebar.module.scss'
 
-export const Sidebar = () => {
+export const Sidebar: React.FC = () => {
   return (
     <aside className={s.root}>
       <Logo />
