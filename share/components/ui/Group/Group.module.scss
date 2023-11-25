@@ -1,0 +1,35 @@
+.root {
+  display: flex;
+
+  &.start {
+    justify-content: flex-start;
+  }
+
+  &.center {
+    justify-content: center;
+  }
+
+  &.end {
+    justify-content: flex-end;
+  }
+
+  &.apart {
+    justify-content: space-between;
+  }
+
+  &.top {
+    align-items: flex-start;
+  }
+
+  &.middle {
+    align-items: center;
+  }
+
+  &.bottom {
+    align-items: flex-end;
+  }
+
+  &.fullWidth {
+    width: 100%;
+  }
+}
