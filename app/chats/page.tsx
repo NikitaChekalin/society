@@ -1,4 +1,4 @@
-const Chats = () => {
+const Chats: React.FC = () => {
   return <div>Chats</div>
 }
 

@@ -1,7 +1,7 @@
-import Image from 'next/image'
 import NotFoundIcon from '@icons/not-found.svg'
+import Image from 'next/image'
 
-const NotFound = () => {
+const NotFound: React.FC = () => {
   return (
     <div
       style={{
@@ -9,7 +9,7 @@ const NotFound = () => {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: 'white',
+        backgroundColor: 'white'
       }}
     >
       <Image src={NotFoundIcon} alt='Not found page' width={500} height={500} />

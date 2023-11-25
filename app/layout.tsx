@@ -1,14 +1,18 @@
-import type { Metadata } from 'next'
 import { Sidebar } from '@share/components/layout'
+import type { Metadata } from 'next'
+
 import '@styles/document.scss'
 import s from './layout.module.scss'
 
 export const metadata: Metadata = {
   title: 'Society - social media for everyone',
-  description: 'Society - discover new friends and communicate with them',
+  description: 'Society - discover new friends and communicate with them'
+}
+interface RootLayoutProps {
+  children: React.ReactNode
 }
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+const RootLayout: React.FC<RootLayoutProps> = ({ children }) => {
   return (
     <html lang='en'>
       <body>
@@ -20,3 +24,4 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     </html>
   )
 }
+export default RootLayout
