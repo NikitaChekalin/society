@@ -1,0 +1,20 @@
+.root {
+  padding: rem(20) rem(30);
+
+  border-bottom: $border;
+
+  &:last-of-type {
+    border-bottom: none;
+  }
+}
+
+.unreadMessages {
+  height: rem(15);
+  width: rem(15);
+
+  border-radius: 50%;
+
+  background-color: $purple;
+
+  @include flex-center;
+}

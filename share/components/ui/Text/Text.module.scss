@@ -7,6 +7,10 @@
   font-weight: $fontsWeightRegular;
   color: $black400Color;
 
+  &.xsm {
+    font-size: rem($fontSize12);
+  }
+
   &.sm {
     font-size: rem($fontSize14);
   }

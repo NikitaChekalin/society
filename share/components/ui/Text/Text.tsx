@@ -4,7 +4,7 @@ import s from './Text.module.scss'
 
 interface TextProps {
   color?: 'white' | 'lightGray'
-  size?: 'sm' | 'md' | 'lg'
+  size?: 'xsm' | 'sm' | 'md' | 'lg'
   align?: 'left' | 'center' | 'right'
   className?: string
   children: React.ReactNode
