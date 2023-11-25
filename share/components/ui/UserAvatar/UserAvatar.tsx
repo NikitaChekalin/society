@@ -1,6 +1,6 @@
+import Image from 'next/image'
 import Avatar from '@images/avatar.png'
 import cn from 'classnames'
-import Image from 'next/image'
 
 import s from './UserAvatar.module.scss'
 

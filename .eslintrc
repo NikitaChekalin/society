@@ -39,6 +39,7 @@
     "import/prefer-default-export": "off",
     "import/extensions": "off",
     "no-unused-vars": "warn",
+    "@typescript-eslint/no-empty-interface": "off",
     "@typescript-eslint/no-non-null-assertion": "off",
     "react/require-default-props": "off",
     "react/prop-types": "off",

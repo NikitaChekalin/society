@@ -1,0 +1,13 @@
+.root {
+  width: 100%;
+
+  font-size: rem($fontSize12);
+  color: $white;
+
+  border: none;
+  background-color: transparent;
+
+  &:focus {
+    outline: none;
+  }
+}

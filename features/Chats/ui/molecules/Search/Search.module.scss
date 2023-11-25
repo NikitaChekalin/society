@@ -1,0 +1,23 @@
+.root {
+  padding: rem(20) rem(30);
+
+  border-bottom: $border;
+}
+
+.search {
+  width: 90%;
+}
+
+.input {
+  width: 100%;
+
+  font-size: rem($fontSize12);
+  color: $white;
+
+  border: none;
+  background-color: transparent;
+
+  &:focus {
+    outline: none;
+  }
+}
