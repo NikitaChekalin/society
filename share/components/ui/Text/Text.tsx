@@ -6,6 +6,7 @@ interface TextProps {
   color?: 'white' | 'lightGray'
   size?: 'xsm' | 'sm' | 'md' | 'lg'
   align?: 'left' | 'center' | 'right'
+  bold?: boolean
   className?: string
   children: React.ReactNode
   component?: React.ElementType
@@ -15,6 +16,7 @@ export const Text: React.FC<TextProps> = ({
   children,
   color = 'white',
   size = 'sm',
+  bold,
   align,
   component: Component = 'p',
   className
@@ -28,7 +30,9 @@ export const Text: React.FC<TextProps> = ({
       [s.center]: align === 'center',
 
       [s.white]: color === 'white',
-      [s.lightGray]: color === 'lightGray'
+      [s.lightGray]: color === 'lightGray',
+
+      [s.bold]: bold
     },
     className
   )

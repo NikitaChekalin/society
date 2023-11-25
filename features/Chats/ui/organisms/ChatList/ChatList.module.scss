@@ -3,4 +3,8 @@
   overflow-y: auto;
 
   @include scrollbar;
+
+  &:hover::-webkit-scrollbar-thumb {
+    background: $black400Color;
+  }
 }
