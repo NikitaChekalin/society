@@ -1,3 +1,4 @@
+export * from './Text/Text'
 export * from './Group/Group'
 export * from './Stack/Stack'
 

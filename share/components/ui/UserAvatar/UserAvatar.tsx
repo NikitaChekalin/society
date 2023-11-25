@@ -12,7 +12,7 @@ interface UserAvatarProps {
 export const UserAvatar: React.FC<UserAvatarProps> = ({ online }) => {
   return (
     <div className={cn(s.root, { [s.online]: online })}>
-      <Image src={Avatar} width={60} height={60} alt='Avatar' className={s.avatar} />
+      <Image src={Avatar} width={50} height={50} alt='Avatar' className={s.avatar} />
     </div>
   )
 }

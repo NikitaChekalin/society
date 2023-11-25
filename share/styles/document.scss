@@ -18,7 +18,7 @@ body {
   box-sizing: border-box;
 
   font-family: $fontSans;
-  font-size: $fontSize16;
+  font-size: rem($fontSize16);
 
   touch-action: manipulation;
   overscroll-behavior-x: none;

@@ -1,4 +1,4 @@
-import { Group, Icon, Stack, UserAvatar } from '@share/components/ui'
+import { Group, Icon, Stack, Text, UserAvatar } from '@share/components/ui'
 
 import s from './CurrentUser.module.scss'
 
@@ -15,8 +15,8 @@ export const CurrentUser: React.FC<CurrentUserProps> = () => {
       <Group align='middle' gap={16}>
         <UserAvatar online />
         <Stack gap={4} align='start'>
-          <div className={s.name}>John Doe</div>
-          <div className={s.status}>Online</div>
+          <Text>Nikita Lighter</Text>
+          <Text color='lightGray'>React JS developer</Text>
         </Stack>
       </Group>
 
