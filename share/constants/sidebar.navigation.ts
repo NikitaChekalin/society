@@ -1,14 +1,14 @@
 export const SIDEBAR_NAVIGATION = [
   {
     href: '/profile',
-    icon: 'user',
+    icon: 'user'
   },
   {
     href: '/chats',
-    icon: 'message-circle',
+    icon: 'message-circle'
   },
   {
     href: '/settings',
-    icon: 'settings',
-  },
+    icon: 'settings'
+  }
 ]
