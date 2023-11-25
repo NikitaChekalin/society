@@ -14,6 +14,10 @@
     align-items: flex-end;
   }
 
+  &.alignSelfStart {
+    align-self: flex-start;
+  }
+
   &.flexStart {
     justify-content: flex-start;
   }

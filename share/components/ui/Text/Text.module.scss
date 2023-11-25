@@ -42,4 +42,9 @@
   &.right {
     text-align: right;
   }
+
+  &.bold {
+    letter-spacing: rem(0.5);
+    font-weight: $fontsWeightBold;
+  }
 }

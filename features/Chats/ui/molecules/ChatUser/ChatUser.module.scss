@@ -3,6 +3,12 @@
 
   border-bottom: $border;
 
+  cursor: pointer;
+
+  &:hover {
+    background-color: #1e1517;
+  }
+
   &:last-of-type {
     border-bottom: none;
   }

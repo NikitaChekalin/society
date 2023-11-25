@@ -1,34 +1,49 @@
 .root {
   position: relative;
+}
 
-  &.online {
-    &::after {
-      content: '';
+.onlineStatus {
+  position: absolute;
 
-      position: absolute;
+  right: rem(-2);
+  bottom: rem(2);
 
-      right: rem(-2);
-      bottom: rem(2);
+  border-radius: 50%;
 
-      width: rem(15);
-      height: rem(15);
+  background-color: $green;
 
-      border-radius: 50%;
+  border: $borderDark;
 
-      background-color: $green;
+  &.sm {
+    width: rem(12);
+    height: rem(12);
+  }
 
-      border: $borderDark;
-    }
+  &.md {
+    width: rem(15);
+    height: rem(15);
   }
 }
 
 .avatar {
   position: relative;
 
-  height: rem(50);
-  width: rem(50);
-
   border-radius: 50%;
   object-fit: contain;
   overflow: hidden;
+
+  &.sm {
+    height: rem(40);
+    width: rem(40);
+  }
+
+  &.md {
+    height: rem(50);
+    width: rem(50);
+  }
+
+  &.lg {
+    height: rem(60);
+    width: rem(60);
+  }
 }
