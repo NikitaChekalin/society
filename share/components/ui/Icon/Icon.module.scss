@@ -2,8 +2,10 @@
   cursor: pointer;
   transition: $transition;
 
-  &:hover {
-    scale: 1.1;
-    stroke: $white;
+  &.hover {
+    &:hover {
+      scale: 1.1;
+      stroke: $white;
+    }
   }
 }

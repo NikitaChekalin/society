@@ -1,8 +1,10 @@
+'use client'
+
 import { Icon } from '@share/components/ui'
-import { getServerPathname } from '@share/server-actions'
 import cn from 'classnames'
 import type dynamicIconImports from 'lucide-react/dynamicIconImports'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 
 import s from './NavigationLink.module.scss'
 
@@ -12,7 +14,7 @@ interface NavigationLinkProps {
 }
 
 export const NavigationLink: React.FC<NavigationLinkProps> = ({ icon, href }) => {
-  const pathname = getServerPathname()
+  const pathname = usePathname()
 
   return (
     <Link href={href}>

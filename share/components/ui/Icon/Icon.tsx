@@ -10,6 +10,7 @@ interface IconProps extends LucideProps {
   size?: number
   color?: string
   className?: string
+  hover?: boolean
 }
 
 export const Icon: React.FC<IconProps> = ({
@@ -17,9 +18,17 @@ export const Icon: React.FC<IconProps> = ({
   size,
   color = '#7c7275',
   className,
+  hover = true,
   ...props
 }) => {
   const LucideIcon = dynamic(dynamicIconImports[name])
 
-  return <LucideIcon color={color} size={size} {...props} className={cn(s.root, className)} />
+  return (
+    <LucideIcon
+      color={color}
+      size={size}
+      {...props}
+      className={cn(s.root, className, { [s.hover]: hover })}
+    />
+  )
 }
