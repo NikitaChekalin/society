@@ -5,7 +5,7 @@ import '@styles/document.scss'
 import s from './layout.module.scss'
 
 export const metadata: Metadata = {
-  title: 'Society - social media for everyone',
+  title: 'Society',
   description: 'Society - discover new friends and communicate with them'
 }
 interface RootLayoutProps {
