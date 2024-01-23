@@ -5,8 +5,8 @@ import '@styles/document.scss'
 import s from './layout.module.scss'
 
 export const metadata: Metadata = {
-  title: 'Society',
-  description: 'Society - discover new friends and communicate with them'
+  title: 'your_name',
+  description: 'your_name - discover new friends and communicate with them'
 }
 interface RootLayoutProps {
   children: React.ReactNode

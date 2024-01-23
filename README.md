@@ -1,4 +1,4 @@
-Social network: Society
+Social network: your_name
 
 Stack of technologies:
 

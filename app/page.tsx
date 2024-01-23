@@ -1,5 +1,5 @@
 const Home: React.FC = () => {
-  return <main>Society</main>
+  return <main>your_name</main>
 }
 
 export default Home
